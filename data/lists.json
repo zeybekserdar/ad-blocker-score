@@ -1,0 +1,1497 @@
+{
+ "updated": "2026-10-27T21:54:44.862Z",
+ "lists": [
+  {
+   "id": "light",
+   "name": "HaGeZi Light",
+   "short": "Light",
+   "kind": "tier",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt"
+  },
+  {
+   "id": "normal",
+   "name": "HaGeZi Normal",
+   "short": "Normal",
+   "kind": "tier",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt"
+  },
+  {
+   "id": "pro",
+   "name": "HaGeZi PRO",
+   "short": "PRO",
+   "kind": "tier",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"
+  },
+  {
+   "id": "proplus",
+   "name": "HaGeZi PRO++",
+   "short": "PRO++",
+   "kind": "tier",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt"
+  },
+  {
+   "id": "ultimate",
+   "name": "HaGeZi ULTIMATE",
+   "short": "ULTIMATE",
+   "kind": "tier",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt"
+  },
+  {
+   "id": "oisd-small",
+   "name": "OISD Small",
+   "short": "OISD S",
+   "kind": "oisd",
+   "url": "https://small.oisd.nl/"
+  },
+  {
+   "id": "oisd-big",
+   "name": "OISD Big",
+   "short": "OISD",
+   "kind": "oisd",
+   "url": "https://big.oisd.nl/"
+  },
+  {
+   "id": "tif",
+   "name": "HaGeZi Threat Intelligence Feeds",
+   "short": "TIF",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt"
+  },
+  {
+   "id": "popupads",
+   "name": "HaGeZi Pop-Up Ads",
+   "short": "Pop-Up",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt"
+  },
+  {
+   "id": "dyndns",
+   "name": "HaGeZi Dynamic DNS",
+   "short": "DynDNS",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt"
+  },
+  {
+   "id": "doh",
+   "name": "HaGeZi DoH/DNS Bypass",
+   "short": "DoH",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh.txt"
+  },
+  {
+   "id": "bypass",
+   "name": "HaGeZi DoH/VPN/TOR/Proxy Bypass",
+   "short": "Bypass",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt"
+  },
+  {
+   "id": "gambling",
+   "name": "HaGeZi Gambling",
+   "short": "Gambling",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt"
+  },
+  {
+   "id": "social",
+   "name": "HaGeZi Social Networks",
+   "short": "Social",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/social.txt"
+  },
+  {
+   "id": "antipiracy",
+   "name": "HaGeZi Anti-Piracy",
+   "short": "Piracy",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt"
+  },
+  {
+   "id": "urlshortener",
+   "name": "HaGeZi URL Shortener",
+   "short": "Shortener",
+   "kind": "extra",
+   "url": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/urlshortener.txt"
+  }
+ ],
+ "domains": {
+  "1337x.to": [
+   "antipiracy"
+  ],
+  "a.teads.tv": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "aax.amazon-adsystem.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "acdn.adnxs.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big",
+   "popupads"
+  ],
+  "ad-maven.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "ad.doubleclick.net": [
+   "proplus",
+   "ultimate"
+  ],
+  "ads-api.tiktok.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "ads-api.twitter.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "ads.adfox.ru": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "ads.admatic.com.tr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big",
+   "popupads"
+  ],
+  "ads.linkedin.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "ads.pubmatic.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "adservice.google.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "adsfs.oppomobile.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "adsterra.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big",
+   "popupads"
+  ],
+  "adx.adform.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "adx.ads.oppomobile.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "alb.reddit.com": [
+   "social"
+  ],
+  "an.facebook.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "an.yandex.ru": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "analytics.tiktok.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "analytics.twitter.com": [
+   "social"
+  ],
+  "api-adservices.apple.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "api.ad.xiaomi.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "api.bugsnag.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "api.mixpanel.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "api.rollbar.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "api.segment.io": [
+   "proplus",
+   "ultimate"
+  ],
+  "api.useinsider.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "api2.amplitude.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "api2.branch.io": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "app-measurement.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "app.adjust.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "app.appsflyer.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "app.getsentry.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "auction.unityads.unity3d.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "bat.bing.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "bdapi-ads.realmemobile.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "bidder.criteo.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "bit.ly": [
+   "urlshortener"
+  ],
+  "browser.sentry-cdn.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "business-api.tiktok.com": [
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "c.amazon-adsystem.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "c1.popads.net": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "cdn.amplitude.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "cdn.branch.io": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "cdn.dengage.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "cdn.heapanalytics.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "cdn.lr-ingest.io": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "cdn.mxpnl.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "cdn.reklamstore.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "cdn.segment.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "cdn.segmentify.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "cdn.taboola.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "clickadu.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big",
+   "popupads"
+  ],
+  "cloudflare-dns.com": [
+   "doh",
+   "bypass"
+  ],
+  "config.samsungads.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "config.unityads.unity3d.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "connect.facebook.net": [
+   "ultimate",
+   "social"
+  ],
+  "control.kochava.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "ct.pinterest.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "social"
+  ],
+  "d.adroll.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "d.applovin.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "data.mistat.xiaomi.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "dis.criteo.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "dns.adguard-dns.com": [
+   "doh",
+   "bypass"
+  ],
+  "dns.google": [
+   "doh",
+   "bypass"
+  ],
+  "dns.nextdns.io": [
+   "doh",
+   "bypass"
+  ],
+  "dns.quad9.net": [
+   "doh",
+   "bypass"
+  ],
+  "doh.opendns.com": [
+   "doh",
+   "bypass"
+  ],
+  "edge.fullstory.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "events.reddit.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "events.redditmedia.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "fastlane.rubiconproject.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "firebase-settings.crashlytics.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "fls-na.amazon-adsystem.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "freedns.afraid.org": [
+   "dyndns"
+  ],
+  "gatr.hit.gemius.pl": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "iadsdk.apple.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "ib.adnxs.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big",
+   "popupads"
+  ],
+  "image6.pubmatic.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "insights.hotjar.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "launches.appsflyer.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "lgr.visilabs.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "log.outbrain.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "log.pinterest.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "logbak.hicloud.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "logservice.hicloud.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "malware.wicar.org": [
+   "ultimate",
+   "tif"
+  ],
+  "mc.yandex.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "mc.yandex.ru": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "med-api.admost.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "metrics.data.hicloud.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "metrics.icloud.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "metrics2.data.hicloud.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "nordvpn.com": [
+   "bypass"
+  ],
+  "notify.bugsnag.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "nyaa.si": [
+   "antipiracy"
+  ],
+  "open.oneplus.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "ow.ly": [
+   "urlshortener"
+  ],
+  "pagead2.googlesyndication.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "ping.chartbeat.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "popads.net": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "popcash.net": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "propellerads.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "protonvpn.com": [
+   "bypass"
+  ],
+  "px.ads.linkedin.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "r.lr-ingest.io": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "region1.google-analytics.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "reklamaction.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "rs.fullstory.com": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "rt.applovin.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "s.amazon-adsystem.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "s.visilabs.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "s2s.adjust.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "samsung-com.112.2o7.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "samsungads.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "sc-static.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "social"
+  ],
+  "script.hotjar.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "sdk-api-v1.singular.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "sdk.netmera.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "sdkconfig.ad.xiaomi.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "secure.adnxs.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "popupads"
+  ],
+  "securemetrics.apple.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "securepubads.g.doubleclick.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "serve.popads.net": [
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "sessions.bugsnag.com": [
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "smetrics.cnn.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "smetrics.fedex.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "smetrics.ford.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "smetrics.hm.com": [],
+  "smetrics.ikea.com": [],
+  "smetrics.samsung.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "smetrics.ups.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "smetrics.vodafone.com.tr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "snap.licdn.com": [
+   "social"
+  ],
+  "ssl.google-analytics.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "sstats.adobe.com": [],
+  "static.ads-twitter.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads",
+   "social"
+  ],
+  "static.cdn.admatic.com.tr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "static.chartbeat.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "static.criteo.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "static.doubleclick.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "static.hotjar.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "static.media.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "stats.g.doubleclick.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "t.appsflyer.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "t.co": [
+   "social",
+   "urlshortener"
+  ],
+  "thepiratebay.org": [
+   "antipiracy"
+  ],
+  "tinyurl.com": [
+   "urlshortener"
+  ],
+  "tk.airfrance.fr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "tk.lacoste.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "tlx.3lift.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "tpc.googlesyndication.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "tr.hit.gemius.pl": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "tr.snapchat.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "tracking.miui.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "trc.taboola.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "trk.pinterest.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "social"
+  ],
+  "us-u.openx.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big",
+   "popupads"
+  ],
+  "vars.hotjar.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "widgets.outbrain.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ],
+  "www.888casino.com": [
+   "gambling"
+  ],
+  "www.bet365.com": [
+   "gambling"
+  ],
+  "www.betway.com": [
+   "gambling"
+  ],
+  "www.clarity.ms": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "www.croxyproxy.com": [
+   "bypass"
+  ],
+  "www.duckdns.org": [
+   "dyndns"
+  ],
+  "www.dynu.com": [
+   "dyndns"
+  ],
+  "www.expressvpn.com": [
+   "bypass"
+  ],
+  "www.facebook.com": [
+   "social"
+  ],
+  "www.google-analytics.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
+  "www.googleadservices.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "www.googletagmanager.com": [
+   "proplus",
+   "ultimate"
+  ],
+  "www.instagram.com": [
+   "social"
+  ],
+  "www.noip.com": [
+   "dyndns"
+  ],
+  "www.pokerstars.com": [
+   "gambling"
+  ],
+  "www.reddit.com": [
+   "social"
+  ],
+  "www.snapchat.com": [
+   "social"
+  ],
+  "www.tiktok.com": [
+   "social"
+  ],
+  "www.torproject.org": [
+   "bypass"
+  ],
+  "www.williamhill.com": [
+   "gambling"
+  ],
+  "x.bidswitch.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-big"
+  ],
+  "x.com": [
+   "social"
+  ],
+  "xp.apple.com": [
+   "ultimate"
+  ],
+  "yandexadexchange.net": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
+   "oisd-small",
+   "oisd-big"
+  ]
+ },
+ "dead": [],
+ "cnames": {
+  "a.teads.tv": "teads.map.fastly.net",
+  "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
+  "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
+  "ads-api.twitter.com": "s.twitter.com",
+  "ads.linkedin.com": "mix-cdn.linkedin.com",
+  "ads.pubmatic.com": "pubmatic.edgekey.net",
+  "adsfs.oppomobile.com": "adsfs.oppomobile.com.ctdns.cn",
+  "adx.adform.net": "track-eu.adformnet.akadns.net",
+  "alb.reddit.com": "dualstack.reddit.map.fastly.net",
+  "an.facebook.com": "star.c10r.facebook.com",
+  "analytics.tiktok.com": "analytics.tiktok.com.ttdns2.com",
+  "analytics.twitter.com": "s.twitter.com",
+  "api-adservices.apple.com": "api-adservices.v.aaplimg.com",
+  "api.ad.xiaomi.com": "api.ad.xiaomi.com.mgslb.com",
+  "auction.unityads.unity3d.com": "gce-auction-master.unityads.unity3d.com",
+  "bat.bing.com": "bat-bing-com.ax-0001.ax-msedge.net",
+  "bidder.criteo.com": "in-ftd-65.fr3.vip.prod.criteo.com",
+  "business-api.tiktok.com": "business-api.tiktok.com.edgesuite.net",
+  "c.amazon-adsystem.com": "d1ykf07e75w7ss.cloudfront.net",
+  "c1.popads.net": "1355769017.rsc.cdn77.org",
+  "cdn.dengage.com": "d2nyswnycgq1yc.cloudfront.net",
+  "cdn.segment.com": "d296je7bbdd650.cloudfront.net",
+  "cdn.segmentify.com": "cdn.segmentify.com.bplslb.com",
+  "cdn.taboola.com": "tls13.taboola.map.fastly.net",
+  "config.samsungads.com": "rtb-config-prod-a39b541ddacde829.elb.us-east-1.amazonaws.com",
+  "config.unityads.unity3d.com": "config-tp.unityads.unity3d.com",
+  "connect.facebook.net": "scontent.xx.fbcdn.net",
+  "ct.pinterest.com": "www.pinterest.com",
+  "data.mistat.xiaomi.com": "data.mistat.xiaomi.com.mgslb.com",
+  "dis.criteo.com": "in-ftd-275.fr3.vip.prod.criteo.com",
+  "dns.nextdns.io": "steering.nextdns.io",
+  "events.reddit.com": "reddit.map.fastly.net",
+  "fastlane.rubiconproject.com": "tagged-by.rubiconproject.net.akadns.net",
+  "iadsdk.apple.com": "iadsdk.apple.com.akadns.net",
+  "ib.adnxs.com": "xandrpme-g-geo.trafficmanager.net",
+  "image6.pubmatic.com": "image6v2.pubmnet.com",
+  "log.outbrain.com": "log.outbrain.org",
+  "log.pinterest.com": "prod.pinterest.global.map.fastly.net",
+  "malware.wicar.org": "wicarmalware.nfshost.com",
+  "mc.yandex.com": "mc.yandex.ru",
+  "metrics.icloud.com": "metricsedge-continent-wrr.v.aaplimg.com",
+  "open.oneplus.net": "ex-public-alb-oneplus-net-1516835981.us-east-1.elb.amazonaws.com",
+  "px.ads.linkedin.com": "pixli.es.lnkdns.net",
+  "r.lr-ingest.io": "prod-default.lb.logrocket.network",
+  "s.amazon-adsystem.com": "tp.4a8f0380d-frontier.amazon-adsystem.com",
+  "sdk-api-v1.singular.net": "sdk-gate.singular.net",
+  "sdk.netmera.com": "dogxp5sgvm75b.cloudfront.net",
+  "sdkconfig.ad.xiaomi.com": "extranet-ipv4-pub-alisgp.alb.xiaomi.com",
+  "secure.adnxs.com": "xandrpme-g-geo.trafficmanager.net",
+  "securemetrics.apple.com": "securemetrics.v.aaplimg.com",
+  "smetrics.cnn.com": "cnn.com.102.122.2o7.net",
+  "smetrics.fedex.com": "fedex.com.ssl.d2.sc.omtrdc.net",
+  "smetrics.ford.com": "ford.com.ssl.sc.omtrdc.net",
+  "smetrics.hm.com": "hm.com.102.112.2o7.net",
+  "smetrics.ikea.com": "ikea.com.102.122.2o7.net",
+  "smetrics.samsung.com": "samsung.com.ssl.sc.omtrdc.net",
+  "smetrics.ups.com": "ups.com.ssl.sc.omtrdc.net",
+  "smetrics.vodafone.com.tr": "vodafone.com.tr.ssl.d2.sc.omtrdc.net",
+  "snap.licdn.com": "od.linkedin.edgesuite.net",
+  "sstats.adobe.com": "adobe.com.ssl.d1.sc.omtrdc.net",
+  "static.ads-twitter.com": "platform.twitter.map.fastly.net",
+  "static.chartbeat.com": "d3f7zc5bbfci5.cloudfront.net",
+  "static.criteo.net": "in-ftd-172.fr3.vip.prod.criteo.com",
+  "static.hotjar.com": "static-cdn.hotjar.com",
+  "static.media.net": "wildcard.media.net.edgekey.net",
+  "tk.airfrance.fr": "tkairfrance.wizaly.com",
+  "tk.lacoste.com": "tk-lacoste-com.wizaly.com",
+  "tlx.3lift.com": "eu-tlx.3lift.com",
+  "tr.snapchat.com": "gcp.api.snapchat.com",
+  "tracking.miui.com": "extranet-ipv4-pub-alisgp.alb.xiaomi.com",
+  "trc.taboola.com": "dualstack.tls13.taboola.map.fastly.net",
+  "trk.pinterest.com": "vpc-trk-10d1b1f8032805fc.elb.us-east-1.amazonaws.com",
+  "widgets.outbrain.com": "wildcard.outbrain.com.edgekey.net",
+  "www.clarity.ms": "tm-clarity-tag.trafficmanager.net",
+  "www.duckdns.org": "appservers-duckdns-prod-1630339571.ca-central-1.elb.amazonaws.com",
+  "www.facebook.com": "star-mini.c10r.facebook.com",
+  "www.instagram.com": "z-p42-instagram.c10r.instagram.com",
+  "www.reddit.com": "reddit.map.fastly.net",
+  "www.snapchat.com": "web-gcp.api.snapchat.com",
+  "www.tiktok.com": "www.tiktok.com.edgesuite.net",
+  "x.bidswitch.net": "user-data-eu.bidswitch.net",
+  "xp.apple.com": "xp.g.aaplimg.com"
+ },
+ "payloads": {
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1888,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 97154,
+  "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 33589,
+  "https://connect.facebook.net/en_US/fbevents.js": 118441,
+  "https://mc.yandex.ru/metrika/tag.js": 69781,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67187,
+  "https://sc-static.net/scevent.min.js": 25041,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38446,
+  "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21544,
+  "https://static.ads-twitter.com/uwt.js": 17324,
+  "https://static.criteo.net/js/ld/publishertag.js": 46926,
+  "https://widgets.outbrain.com/outbrain.js": 122100,
+  "https://www.google-analytics.com/analytics.js": 52310
+ }
+}

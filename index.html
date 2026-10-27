@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ad Blocker Score – Reklam Engelleyici Testi</title>
+  <meta name="description" content="Reklam engelleyicinizi ve DNS filtrenizi (Pi-hole, AdGuard Home, NextDNS) test edin: reklam ağları, izleyiciler, telemetri ve reklam alanları için 100 üzerinden skor.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ad Blocker Score">
+  <meta property="og:title" content="Ad Blocker Score – Reklam Engelleyici Testi">
+  <meta property="og:description" content="Reklam engelleyiciniz ne kadar iyi? Reklam ağları, izleyiciler ve telemetri için 100 üzerinden skor alın.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // tema yanıp sönmesin diye erkenden
+    try { var t = localStorage.getItem('abt.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="./">
+        <svg class="brand-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5" class="brand-check"/></svg>
+        <span data-i18n="app.name">Ad Blocker Score</span>
+      </a>
+      <div class="actions">
+        <button id="lang-btn" class="icon-btn" type="button" data-i18n-aria="lang.toggle">EN</button>
+        <button id="theme-btn" class="icon-btn" type="button" data-i18n-aria="theme.toggle">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-text">
+        <h1 data-i18n="hero.title">Reklam engelleyiciniz ne kadar iyi?</h1>
+        <p class="lead" data-i18n="hero.lead"></p>
+        <label class="check">
+          <input id="content-toggle" type="checkbox" checked>
+          <span data-i18n="content.toggle"></span>
+        </label>
+        <label class="check">
+          <input id="regional-toggle" type="checkbox">
+          <span data-i18n="regional.toggle"></span>
+        </label>
+        <button id="start-btn" class="btn-primary" type="button">
+          <span id="start-label">Testi başlat</span>
+        </button>
+        <p class="muted small" data-i18n="hint.before"></p>
+        <div id="control-msg" class="notice" role="status" hidden></div>
+      </div>
+
+      <div class="score-card" aria-live="polite">
+        <div class="ring">
+          <svg viewBox="0 0 120 120" aria-hidden="true">
+            <circle class="ring-track" cx="60" cy="60" r="52"/>
+            <circle id="ring-value" class="ring-value" cx="60" cy="60" r="52"/>
+          </svg>
+          <div class="ring-text">
+            <span id="score-num" class="score-num">-</span>
+            <span class="muted small" data-i18n="score.label">/ 100 puan</span>
+          </div>
+        </div>
+        <p id="rating" class="rating"></p>
+        <p id="rating-desc" class="muted small"></p>
+        <ul class="counters">
+          <li><span class="dot blocked"></span><span data-i18n="status.blocked"></span><strong id="count-blocked">0</strong></li>
+          <li><span class="dot allowed"></span><span data-i18n="status.allowed"></span><strong id="count-allowed">0</strong></li>
+          <li><span class="dot timeout"></span><span data-i18n="status.timeout"></span><strong id="count-timeout">0</strong></li>
+          <li><span class="dot unreachable"></span><span data-i18n="status.unreachable"></span><strong id="count-unreachable">0</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="analysis" class="analysis" hidden>
+      <h2 data-i18n="analysis.title">Analiz</h2>
+      <div class="analysis-grid">
+        <article id="profile-card" class="panel"></article>
+        <article id="savings-card" class="panel" hidden></article>
+        <article id="rules-card" class="panel panel-wide" hidden></article>
+        <article id="lists-card" class="panel panel-wide" hidden></article>
+      </div>
+    </section>
+
+    <section id="results" class="results" data-filter="all">
+      <div class="section-head">
+        <h2 data-i18n="results.title">Sonuçlar</h2>
+        <div class="toolbar">
+          <span class="muted small" data-i18n="filter.label"></span>
+          <div class="segmented" role="group">
+            <button type="button" data-filter="all" aria-pressed="true" data-i18n="filter.all"></button>
+            <button type="button" data-filter="blocked" aria-pressed="false" data-i18n="filter.blocked"></button>
+            <button type="button" data-filter="allowed" aria-pressed="false" data-i18n="filter.allowed"></button>
+          </div>
+          <button id="expand-btn" class="btn-secondary" type="button"></button>
+        </div>
+      </div>
+      <ul class="legend">
+        <li><span class="dot blocked"></span><span data-i18n="status.blocked"></span></li>
+        <li><span class="dot allowed"></span><span data-i18n="status.allowed"></span></li>
+        <li><span class="dot timeout"></span><span data-i18n="status.timeout"></span></li>
+        <li><span class="dot unreachable"></span><span data-i18n="status.unreachable"></span></li>
+        <li><span class="dot"></span><span data-i18n="status.pending"></span></li>
+      </ul>
+      <p id="badges-hint" class="muted small" data-i18n="lists.badgesHint" hidden></p>
+
+      <div class="subsection">
+        <h3 data-i18n="section.main">Reklam ve izleme</h3>
+        <p class="muted small" data-i18n="section.mainDesc"></p>
+        <div id="categories-main" class="grid"></div>
+      </div>
+
+      <div id="content-section" class="subsection">
+        <div class="subsection-head">
+          <h3 data-i18n="section.content">İçerik filtreleri</h3>
+          <span id="content-score" class="cat-score"></span>
+        </div>
+        <p class="muted small" data-i18n="section.contentDesc"></p>
+        <div id="categories-content" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="history" class="history">
+      <h2 data-i18n="history.title">Geçmiş ve karşılaştırma</h2>
+      <p class="muted" data-i18n="history.lead"></p>
+      <div id="history-body"></div>
+    </section>
+
+    <section class="custom">
+      <h2 data-i18n="custom.title">Kendi alan adınızı test edin</h2>
+      <p class="muted" data-i18n="custom.lead"></p>
+      <form id="custom-form" class="custom-form" novalidate>
+        <input id="custom-input" type="text" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" data-i18n-placeholder="custom.placeholder">
+        <button class="btn-secondary" type="submit" data-i18n="custom.button">Test et</button>
+      </form>
+      <p id="custom-result" class="custom-result" role="status"></p>
+    </section>
+
+    <section class="how">
+      <h2 data-i18n="how.title">Nasıl çalışır?</h2>
+      <div class="how-grid">
+        <div class="how-item">
+          <h3 data-i18n="how.network.title"></h3>
+          <p class="muted" data-i18n="how.network.body"></p>
+        </div>
+        <div class="how-item">
+          <h3 data-i18n="how.cosmetic.title"></h3>
+          <p class="muted" data-i18n="how.cosmetic.body"></p>
+        </div>
+        <div class="how-item">
+          <h3 data-i18n="how.timeout.title"></h3>
+          <p class="muted" data-i18n="how.timeout.body"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 data-i18n="faq.title">Sık sorulan sorular</h2>
+      <details><summary data-i18n="faq.q1"></summary><p data-i18n-html="faq.a1"></p></details>
+      <details><summary data-i18n="faq.q2"></summary><p data-i18n-html="faq.a2"></p></details>
+      <details><summary data-i18n="faq.q3"></summary><p data-i18n-html="faq.a3"></p></details>
+      <details><summary data-i18n="faq.q4"></summary><p data-i18n-html="faq.a4"></p></details>
+      <details><summary data-i18n="faq.q5"></summary><p data-i18n-html="faq.a5"></p></details>
+      <details><summary data-i18n="faq.q6"></summary><p data-i18n-html="faq.a6"></p></details>
+      <details><summary data-i18n="faq.q7"></summary><p data-i18n-html="faq.a7"></p></details>
+      <details><summary data-i18n="faq.q9"></summary><p data-i18n-html="faq.a9"></p></details>
+      <details><summary data-i18n="faq.q8"></summary><p data-i18n-html="faq.a8"></p></details>
+    </section>
+
+    <section>
+      <details id="dev" class="dev">
+        <summary>
+          <span data-i18n="dev.title">Geliştirici paneli</span>
+          <span class="muted small" data-i18n="dev.hint"></span>
+        </summary>
+        <div class="dev-body">
+          <p class="muted small" data-i18n="dev.lead"></p>
+          <div class="dev-toolbar">
+            <p id="control-info" class="small muted"></p>
+            <button id="copy-btn" class="btn-secondary" type="button" data-i18n="dev.copy">JSON olarak kopyala</button>
+          </div>
+          <p class="small ua"><strong data-i18n="dev.ua"></strong> <code id="ua"></code></p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="th.category"></th>
+                  <th data-i18n="th.group"></th>
+                  <th data-i18n="th.target"></th>
+                  <th data-i18n="th.method"></th>
+                  <th data-i18n="th.result"></th>
+                  <th data-i18n="th.time"></th>
+                  <th data-i18n="th.detail"></th>
+                </tr>
+              </thead>
+              <tbody id="dev-rows"></tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p class="muted small" data-i18n="footer.privacy"></p>
+  </footer>
+
+  <!-- kozmetik test elementleri buraya ekleniyor -->
+  <div id="test-sandbox" aria-hidden="true"></div>
+</body>
+</html>

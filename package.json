@@ -1,0 +1,14 @@
+{
+  "name": "ad-blocker-score",
+  "private": true,
+  "type": "module",
+  "description": "Ad Blocker Score: static ad blocker test page. No build step; these scripts only maintain data/lists.json.",
+  "scripts": {
+    "lists": "node scripts/build-lists.mjs",
+    "selftest": "node scripts/selftest.mjs",
+    "serve": "python3 -m http.server 8080"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
