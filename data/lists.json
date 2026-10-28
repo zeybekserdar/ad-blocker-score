@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T22:20:14.748Z",
+ "updated": "2026-10-28T05:21:33.503Z",
  "lists": [
   {
    "id": "light",
@@ -1474,7 +1474,7 @@
   "www.duckdns.org": "appservers-duckdns-prod-1630339571.ca-central-1.elb.amazonaws.com",
   "www.facebook.com": "star-mini.c10r.facebook.com",
   "www.instagram.com": "z-p42-instagram.c10r.instagram.com",
-  "www.reddit.com": "reddit.map.fastly.net",
+  "www.reddit.com": "dualstack.reddit.map.fastly.net",
   "www.snapchat.com": "web-gcp.api.snapchat.com",
   "www.tiktok.com": "www.tiktok.com.edgesuite.net",
   "www.williamhill.com": "d1gzxxufldqrkg.cloudfront.net",
@@ -1482,14 +1482,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1888,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 94817,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1890,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 94905,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 33589,
-  "https://connect.facebook.net/en_US/fbevents.js": 114651,
+  "https://connect.facebook.net/en_US/fbevents.js": 114655,
   "https://mc.yandex.ru/metrika/tag.js": 69781,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67213,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67205,
   "https://sc-static.net/scevent.min.js": 25041,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38479,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38475,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46926,
