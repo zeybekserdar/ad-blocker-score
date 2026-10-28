@@ -103,6 +103,14 @@ check('içerik filtreleri ana skoru etkilemez', () => {
   assert.equal(weightedScore(CATEGORIES, tests, r), 100);
 });
 
+check('skordan çıkarılan kategori puanı düşürmez, kalan ağırlıklar yeniden ölçeklenir', () => {
+  const r = scenario((x) => (x.cat.id === 'social' ? 'allowed' : 'blocked'));
+  const social = CATEGORIES.find((c) => c.id === 'social');
+  const allWeights = CATEGORIES.reduce((sum, c) => sum + (c.weight || 0), 0);
+  assert.equal(weightedScore(CATEGORIES, tests, r), Math.round(((allWeights - social.weight) / allWeights) * 100));
+  assert.equal(weightedScore(CATEGORIES, tests.filter((x) => x.cat !== social), r), 100);
+});
+
 // liste tespiti
 const TIERS = ['light', 'normal', 'pro', 'proplus', 'ultimate'];
 const tiersFrom = (tier) => TIERS.slice(TIERS.indexOf(tier));

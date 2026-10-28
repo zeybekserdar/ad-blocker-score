@@ -33,6 +33,9 @@ let rulesFormat = null; // null ise profile göre seçiliyor
 let rulesContent = false;
 let rulesText = '';
 let historySel = { a: null, b: null };
+// kullanıcının bilerek engellemediği kategoriler: test ediliyor ama skora girmiyor
+const excludable = new Set(mainCats.filter((c) => c.weight).map((c) => c.id));
+const excluded = new Set((store.get('excluded') || '').split(',').filter((id) => excludable.has(id)));
 
 const $ = (id) => document.getElementById(id);
 const ESCAPES = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
@@ -48,6 +51,8 @@ const isActiveCat = (cat) => cat.scored === 'main'
   || (cat.scored === 'content' && contentEnabled())
   || (cat.scored === 'regional' && regionalEnabled());
 const activeTests = () => tests.filter((x) => isActiveCat(x.cat));
+const isScoredCat = (cat) => isActiveCat(cat) && !excluded.has(cat.id);
+const scoredTests = () => tests.filter((x) => isScoredCat(x.cat));
 const kb = (bytes) => Math.max(1, Math.round(bytes / 1024));
 const testsOf = (cat) => tests.filter((x) => x.cat === cat);
 const matchesFilter = (r) => filter === 'all' || (filter === 'blocked' ? isBlocked(r) : r.status === 'allowed');
@@ -80,12 +85,16 @@ function cardHtml(cat) {
   }).join('');
 
   const weight = cat.weight ? `<span class="cat-weight">${esc(t('card.weight', { n: cat.weight }))}</span>` : '';
+  const toggle = excludable.has(cat.id)
+    ? `<label class="check cat-toggle"><input type="checkbox" data-score-toggle="${cat.id}"${excluded.has(cat.id) ? '' : ' checked'}><span>${esc(t('card.inScore'))}</span></label>`
+    : '';
   return `
     <article class="card" data-cat="${cat.id}">
       <div class="card-head">
         <div class="card-title"><h3>${esc(t(`cat.${cat.id}`))}</h3>${weight}</div>
         <span class="cat-score" data-score="${cat.id}">-</span>
       </div>
+      ${toggle}
       <p class="muted small">${esc(t(`cat.${cat.id}.desc`))}</p>
       <div class="bar"><span data-bar="${cat.id}"></span></div>
       <p class="small muted" data-summary="${cat.id}"></p>
@@ -139,6 +148,7 @@ function update() {
     const card = root.querySelector(`[data-cat="${cat.id}"]`);
     card.dataset.level = level(pct);
     card.hidden = cat.scored === 'regional' && !regionalEnabled();
+    card.classList.toggle('excluded', excluded.has(cat.id));
     root.querySelector(`[data-score="${cat.id}"]`).textContent = pct === null ? '-' : `${pct}%`;
     root.querySelector(`[data-bar="${cat.id}"]`).style.width = `${pct ?? 0}%`;
     root.querySelector(`[data-summary="${cat.id}"]`).textContent = s.done
@@ -157,12 +167,11 @@ function update() {
   renderAnalysis();
 }
 
-// kapalı paketlerin eski sonuçları skora karışmasın
-const currentScore = () => weightedScore(CATEGORIES, activeTests(), results);
+// kapalı paketlerin ve skordan çıkarılan kategorilerin sonuçları skora karışmasın
+const currentScore = () => weightedScore(CATEGORIES, scoredTests(), results);
 
 function updateScore() {
-  const scoredTests = activeTests().filter((x) => x.cat.scored !== 'content');
-  const s = tally(scoredTests, results);
+  const s = tally(scoredTests().filter((x) => x.cat.scored !== 'content'), results);
   const score = currentScore();
   const lvl = level(score);
 
@@ -173,6 +182,9 @@ function updateScore() {
   $('rating-desc').textContent = score === null
     ? t('score.idleDesc')
     : t('score.summary', { blocked: s.blocked, counted: s.counted });
+  const nExcluded = mainCats.filter((c) => isActiveCat(c) && excluded.has(c.id)).length;
+  $('score-note').hidden = !nExcluded;
+  $('score-note').textContent = nExcluded ? t('score.excluded', { n: nExcluded }) : '';
 
   $('count-blocked').textContent = s.blocked - s.timeout;
   $('count-allowed').textContent = s.allowed;
@@ -294,7 +306,8 @@ function renderSavings() {
 }
 
 function passedForRules() {
-  const active = activeTests();
+  // skordan çıkarılan kategoriler bilerek açık bırakılmış, kurala dönüşmesin
+  const active = activeTests().filter((x) => !excluded.has(x.cat.id));
   const passed = (x) => results.get(x.id)?.status === 'allowed';
   return {
     hosts: active.filter((x) => x.method === 'fetch' && passed(x) && (rulesContent || x.cat.scored !== 'content')).map((x) => x.host),
@@ -386,6 +399,7 @@ function saveCurrentRun() {
     profile: profile.id,
     browser: browserName(),
     regional: regionalEnabled(),
+    excluded: [...excluded],
     cats: Object.fromEntries(CATEGORIES.filter(isActiveCat).map((cat) => [cat.id, percent(tally(testsOf(cat), results))])),
     results: Object.fromEntries(active.filter((x) => results.has(x.id)).map((x) => [resultKey(x), results.get(x.id).status])),
   });
@@ -551,7 +565,7 @@ function updateDev() {
 function buildReport() {
   const catReport = (cat) => {
     const c = tally(testsOf(cat), results);
-    return [cat.id, { score: percent(c), blocked: c.blocked, counted: c.counted, unreachable: c.unreachable, weight: cat.weight }];
+    return [cat.id, { score: percent(c), blocked: c.blocked, counted: c.counted, unreachable: c.unreachable, weight: cat.weight, inScore: isScoredCat(cat) }];
   };
   return {
     tool: 'ad-blocker-score',
@@ -559,6 +573,7 @@ function buildReport() {
     userAgent: navigator.userAgent,
     score: currentScore(),
     regional: regionalEnabled(),
+    excluded: [...excluded],
     savings: estimateSavings(activeTests(), results, listData),
     contentScore: percent(tally(tests.filter((x) => x.cat.scored === 'content'), results)),
     control,
@@ -743,6 +758,14 @@ $('content-toggle').addEventListener('change', (e) => {
 });
 $('regional-toggle').addEventListener('change', (e) => {
   store.set('regional', e.target.checked ? '1' : '0');
+  update();
+});
+$('results').addEventListener('change', (e) => {
+  const box = e.target.closest('[data-score-toggle]');
+  if (!box) return;
+  if (box.checked) excluded.delete(box.dataset.scoreToggle);
+  else excluded.add(box.dataset.scoreToggle);
+  store.set('excluded', [...excluded].join(','));
   update();
 });
 $('rules-card').addEventListener('click', onRulesClick);

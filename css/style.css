@@ -218,6 +218,9 @@ main > section { margin-top: 40px; }
   border: 1px solid var(--border); border-radius: 99px; padding: 1px 8px; white-space: nowrap;
 }
 .card-title { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
+.cat-toggle { font-size: .85rem; align-self: flex-start; }
+.card.excluded > :not(.cat-toggle) { opacity: .55; }
+.card.excluded .cat-weight { text-decoration: line-through; }
 
 /* Liste rozetleri */
 .badges { display: inline-flex; flex-wrap: wrap; gap: 4px; margin-left: auto; }

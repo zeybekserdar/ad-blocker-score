@@ -18,6 +18,7 @@ export default {
   'score.idle': 'Not tested yet',
   'score.idleDesc': 'Press "Start test" to begin.',
   'score.summary': '{blocked} of {counted} reachable tests were blocked.',
+  'score.excluded': '{n} categories excluded from the score.',
   'rating.great': 'Excellent protection',
   'rating.good': 'Good protection',
   'rating.partial': 'Partial protection',
@@ -29,7 +30,7 @@ export default {
 
   'results.title': 'Results',
   'section.main': 'Ads & tracking',
-  'section.mainDesc': 'Categories that make up the main score. The points tag in each card\'s title is that category\'s weight out of 100 points.',
+  'section.mainDesc': 'Categories that make up the main score. The points tag in each card\'s title is that category\'s weight out of 100 points. Untick a category you deliberately leave unblocked to drop it from the score; the remaining weights are rescaled to 100.',
   'section.content': 'Content filters',
   'section.contentDesc': 'Gambling, piracy, social networks and DNS bypass are opt-in filters; "passed" is only a problem if you deliberately block them. They do not affect the main score.',
   'section.contentScore': '{pct}% blocked',
@@ -41,6 +42,7 @@ export default {
   'card.summary': '{blocked}/{total} blocked',
   'card.unreachable': ' · {n} unreachable',
   'card.weight': '{n} pts',
+  'card.inScore': 'Count in score',
 
   'filter.label': 'Show:',
   'filter.all': 'All',
@@ -54,7 +56,7 @@ export default {
   'cat.analytics': 'Analytics & trackers',
   'cat.analytics.desc': 'Analytics and session-recording services that record visitor behaviour.',
   'cat.social': 'Social media trackers',
-  'cat.social.desc': 'Pixels and tracking scripts that social networks embed on websites.',
+  'cat.social.desc': 'Pixels and tracking scripts that social networks embed on websites. If you keep them for social logins or share buttons, you can leave them out of the score.',
   'cat.cosmetic': 'Cosmetic filtering',
   'cat.cosmetic.desc': 'Hiding page elements that look like ad slots, and banner images.',
   'cat.telemetry': 'OEM telemetry & error tracking',

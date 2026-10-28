@@ -18,6 +18,7 @@ export default {
   'score.idle': 'Henüz test edilmedi',
   'score.idleDesc': 'Başlamak için "Testi başlat" düğmesine basın.',
   'score.summary': 'Ulaşılabilen {counted} testten {blocked} tanesi engellendi.',
+  'score.excluded': '{n} kategori skora dahil değil.',
   'rating.great': 'Mükemmel koruma',
   'rating.good': 'İyi koruma',
   'rating.partial': 'Kısmi koruma',
@@ -29,7 +30,7 @@ export default {
 
   'results.title': 'Sonuçlar',
   'section.main': 'Reklam ve izleme',
-  'section.mainDesc': 'Ana skoru oluşturan kategoriler. Her kartın başlığındaki puan etiketi, o kategorinin 100 puan içindeki ağırlığıdır.',
+  'section.mainDesc': 'Ana skoru oluşturan kategoriler. Her kartın başlığındaki puan etiketi, o kategorinin 100 puan içindeki ağırlığıdır. Bilerek engellemediğiniz bir kategoriyi kartındaki kutuyla skordan çıkarabilirsiniz; kalan ağırlıklar 100 üzerinden yeniden ölçeklenir.',
   'section.content': 'İçerik filtreleri',
   'section.contentDesc': 'Kumar, korsan içerik, sosyal ağlar ve DNS atlatma isteğe bağlı filtrelerdir; bilinçli olarak engellemiyorsanız "geçti" sorun değildir. Ana skoru etkilemez.',
   'section.contentScore': '%{pct} engellendi',
@@ -41,6 +42,7 @@ export default {
   'card.summary': '{blocked}/{total} engellendi',
   'card.unreachable': ' · {n} ulaşılamadı',
   'card.weight': '{n} puan',
+  'card.inScore': 'Skora dahil',
 
   'filter.label': 'Göster:',
   'filter.all': 'Tümü',
@@ -54,7 +56,7 @@ export default {
   'cat.analytics': 'Analitik ve izleyiciler',
   'cat.analytics.desc': 'Ziyaretçi davranışını kaydeden analitik ve oturum kaydı servisleri.',
   'cat.social': 'Sosyal medya izleyicileri',
-  'cat.social.desc': 'Sosyal ağların sitelere yerleştirdiği piksel ve izleme betikleri.',
+  'cat.social.desc': 'Sosyal ağların sitelere yerleştirdiği piksel ve izleme betikleri. Sosyal ağla giriş veya paylaşım düğmeleri için bunları açık bırakıyorsanız skordan çıkarabilirsiniz.',
   'cat.cosmetic': 'Kozmetik filtreleme',
   'cat.cosmetic.desc': 'Sayfadaki reklam alanı gibi görünen elementlerin ve banner görsellerinin gizlenmesi.',
   'cat.telemetry': 'OEM telemetri ve hata izleme',

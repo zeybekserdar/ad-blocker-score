@@ -26,6 +26,7 @@ On top of that:
 
 - A Türkiye pack (Admatic, ReklamStore, AdMost, Gemius, Insider, Netmera, Segmentify...). When it's on it counts for 5 points; it's on by default in the Turkish UI.
 - Content filters (gambling, piracy, social networks, DoH/VPN, URL shorteners). These get their own percentage and don't affect the main score.
+- Any scored category can be left out of the score with the "Count in score" box on its card (say, social trackers you keep for social logins). It is still tested, but its weight drops out and the rest are rescaled to 100. Its domains are also left out of the generated rules.
 
 ## How it works
 
