@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T05:21:33.503Z",
+ "updated": "2026-10-29T05:21:48.001Z",
  "lists": [
   {
    "id": "light",
@@ -1397,7 +1397,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1463,7 +1463,7 @@
   "static.media.net": "wildcard.media.net.edgekey.net",
   "tk.airfrance.fr": "tkairfrance.wizaly.com",
   "tk.lacoste.com": "tk-lacoste-com.wizaly.com",
-  "tlx.3lift.com": "us-west-tlx.3lift.com",
+  "tlx.3lift.com": "us-east-tlx.3lift.com",
   "tr.snapchat.com": "gcp.api.snapchat.com",
   "tracking.miui.com": "extranet-ipv4-pub-alisgp.alb.xiaomi.com",
   "trc.taboola.com": "dualstack.tls13.taboola.map.fastly.net",
@@ -1474,26 +1474,26 @@
   "www.duckdns.org": "appservers-duckdns-prod-1630339571.ca-central-1.elb.amazonaws.com",
   "www.facebook.com": "star-mini.c10r.facebook.com",
   "www.instagram.com": "z-p42-instagram.c10r.instagram.com",
-  "www.reddit.com": "dualstack.reddit.map.fastly.net",
+  "www.reddit.com": "reddit.map.fastly.net",
   "www.snapchat.com": "web-gcp.api.snapchat.com",
   "www.tiktok.com": "www.tiktok.com.edgesuite.net",
   "www.williamhill.com": "d1gzxxufldqrkg.cloudfront.net",
-  "x.bidswitch.net": "user-data-us-west.bidswitch.net",
+  "x.bidswitch.net": "user-data-us-east.bidswitch.net",
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1890,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 94905,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1888,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 97013,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 33589,
-  "https://connect.facebook.net/en_US/fbevents.js": 114655,
+  "https://connect.facebook.net/en_US/fbevents.js": 114654,
   "https://mc.yandex.ru/metrika/tag.js": 69781,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67205,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67191,
   "https://sc-static.net/scevent.min.js": 25041,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38475,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38686,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46926,
-  "https://widgets.outbrain.com/outbrain.js": 122099,
+  "https://widgets.outbrain.com/outbrain.js": 122207,
   "https://www.google-analytics.com/analytics.js": 52310
  }
 }
