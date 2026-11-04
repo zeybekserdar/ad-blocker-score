@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T05:19:28.149Z",
+ "updated": "2026-11-04T05:19:52.692Z",
  "lists": [
   {
    "id": "light",
@@ -736,7 +736,8 @@
    "proplus",
    "ultimate",
    "oisd-small",
-   "oisd-big"
+   "oisd-big",
+   "popupads"
   ],
   "log.pinterest.com": [
    "light",
@@ -1177,7 +1178,8 @@
    "proplus",
    "ultimate",
    "oisd-small",
-   "oisd-big"
+   "oisd-big",
+   "popupads"
   ],
   "stats.g.doubleclick.net": [
    "light",
@@ -1311,7 +1313,8 @@
    "proplus",
    "ultimate",
    "oisd-small",
-   "oisd-big"
+   "oisd-big",
+   "popupads"
   ],
   "www.888casino.com": [
    "gambling"
@@ -1414,7 +1417,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1444,7 +1447,7 @@
   "data.mistat.xiaomi.com": "data.mistat.xiaomi.com.mgslb.com",
   "dis.criteo.com": "in-ftd-275.us5.vip.prod.criteo.com",
   "dns.nextdns.io": "steering.nextdns.io",
-  "events.reddit.com": "dualstack.reddit.map.fastly.net",
+  "events.reddit.com": "reddit.map.fastly.net",
   "fastlane.rubiconproject.com": "tagged-by.rubiconproject.net.akadns.net",
   "iadsdk.apple.com": "iadsdk.apple.com.akadns.net",
   "ib.adnxs.com": "xandrpme-g-geo.trafficmanager.net",
@@ -1499,14 +1502,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1886,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 93943,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1887,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 93960,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 33589,
-  "https://connect.facebook.net/en_US/fbevents.js": 114783,
-  "https://mc.yandex.ru/metrika/tag.js": 69832,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67245,
+  "https://connect.facebook.net/en_US/fbevents.js": 114279,
+  "https://mc.yandex.ru/metrika/tag.js": 69863,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67232,
   "https://sc-static.net/scevent.min.js": 25041,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38810,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38842,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46931,
