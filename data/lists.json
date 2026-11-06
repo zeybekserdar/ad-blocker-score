@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T05:19:17.355Z",
+ "updated": "2026-11-06T05:19:13.751Z",
  "lists": [
   {
    "id": "light",
@@ -1390,7 +1390,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1410,6 +1410,7 @@
   "c.amazon-adsystem.com": "d1ykf07e75w7ss.cloudfront.net",
   "c1.popads.net": "1355769017.rsc.cdn77.org",
   "cdn.dengage.com": "d2nyswnycgq1yc.cloudfront.net",
+  "cdn.heapanalytics.com": "d38au5kn48shwv.cloudfront.net",
   "cdn.segment.com": "d296je7bbdd650.cloudfront.net",
   "cdn.segmentify.com": "cdn.segmentify.com.bplslb.com",
   "cdn.taboola.com": "tls13.taboola.map.fastly.net",
@@ -1475,18 +1476,18 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1885,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 94054,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1882,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 96347,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 35494,
-  "https://connect.facebook.net/en_US/fbevents.js": 114279,
+  "https://connect.facebook.net/en_US/fbevents.js": 113683,
   "https://mc.yandex.ru/metrika/tag.js": 69863,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67142,
-  "https://sc-static.net/scevent.min.js": 25041,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39149,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67623,
+  "https://sc-static.net/scevent.min.js": 25040,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39381,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46931,
-  "https://widgets.outbrain.com/outbrain.js": 120913,
+  "https://widgets.outbrain.com/outbrain.js": 121150,
   "https://www.google-analytics.com/analytics.js": 52310
  }
 }
