@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T05:19:13.751Z",
+ "updated": "2026-11-07T05:19:10.189Z",
  "lists": [
   {
    "id": "light",
@@ -129,10 +129,6 @@
    "popupads"
   ],
   "aax.amazon-adsystem.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
@@ -147,11 +143,6 @@
    "popupads"
   ],
   "ad-maven.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -190,18 +181,10 @@
    "oisd-big"
   ],
   "ads.admatic.com.tr": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-big",
    "popupads"
   ],
   "ads.linkedin.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -209,9 +192,6 @@
    "social"
   ],
   "ads.pubmatic.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -294,17 +274,11 @@
    "social"
   ],
   "api-adservices.apple.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
   ],
   "api.ad.xiaomi.com": [
-   "light",
-   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -381,11 +355,6 @@
    "oisd-big"
   ],
   "auction.unityads.unity3d.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -412,7 +381,6 @@
   "bidder.criteo.com": [
    "light",
    "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -493,11 +461,6 @@
    "oisd-big"
   ],
   "cdn.reklamstore.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-big"
   ],
   "cdn.segment.com": [
@@ -518,10 +481,8 @@
    "oisd-big"
   ],
   "clickadu.com": [
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-big",
+   "tif",
    "popupads"
   ],
   "cloudflare-dns.com": [
@@ -536,11 +497,6 @@
    "ultimate"
   ],
   "config.unityads.unity3d.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -562,7 +518,6 @@
   "d.adroll.com": [
    "light",
    "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -591,7 +546,6 @@
   "dis.criteo.com": [
    "light",
    "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -647,11 +601,6 @@
    "social"
   ],
   "fastlane.rubiconproject.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -678,10 +627,6 @@
    "oisd-big"
   ],
   "iadsdk.apple.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
@@ -730,9 +675,6 @@
    "oisd-big"
   ],
   "log.outbrain.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -768,13 +710,9 @@
    "oisd-big"
   ],
   "malware.wicar.org": [
-   "ultimate",
-   "tif"
+   "ultimate"
   ],
   "mc.yandex.com": [
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big"
   ],
@@ -884,7 +822,6 @@
    "popupads"
   ],
   "propellerads.com": [
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -918,13 +855,7 @@
    "proplus",
    "ultimate"
   ],
-  "reklamaction.com": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate"
-  ],
+  "reklamaction.com": [],
   "rs.fullstory.com": [
    "pro",
    "proplus",
@@ -943,7 +874,6 @@
   ],
   "s.amazon-adsystem.com": [
    "pro",
-   "proplus",
    "ultimate"
   ],
   "s.visilabs.net": [
@@ -1001,13 +931,9 @@
    "normal",
    "pro",
    "proplus",
-   "ultimate",
    "popupads"
   ],
   "sdk.netmera.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate"
   ],
@@ -1021,15 +947,11 @@
    "oisd-big"
   ],
   "secure.adnxs.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "popupads"
   ],
   "securemetrics.apple.com": [
-   "pro",
    "proplus",
    "ultimate"
   ],
@@ -1114,11 +1036,6 @@
    "social"
   ],
   "static.cdn.admatic.com.tr": [
-   "light",
-   "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -1133,7 +1050,6 @@
   "static.criteo.net": [
    "light",
    "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-big",
@@ -1150,9 +1066,6 @@
    "popupads"
   ],
   "static.hotjar.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate"
   ],
@@ -1196,9 +1109,6 @@
   "tk.airfrance.fr": [],
   "tk.lacoste.com": [],
   "tlx.3lift.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -1280,9 +1190,6 @@
    "oisd-big"
   ],
   "widgets.outbrain.com": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -1302,8 +1209,6 @@
    "light",
    "normal",
    "pro",
-   "proplus",
-   "ultimate",
    "oisd-big"
   ],
   "www.croxyproxy.com": [
@@ -1361,9 +1266,6 @@
    "gambling"
   ],
   "x.bidswitch.net": [
-   "light",
-   "normal",
-   "pro",
    "proplus",
    "ultimate",
    "oisd-big",
@@ -1476,14 +1378,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1882,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 96347,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1885,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 93928,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 35494,
-  "https://connect.facebook.net/en_US/fbevents.js": 113683,
+  "https://connect.facebook.net/en_US/fbevents.js": 113788,
   "https://mc.yandex.ru/metrika/tag.js": 69863,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67623,
-  "https://sc-static.net/scevent.min.js": 25040,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39381,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67198,
+  "https://sc-static.net/scevent.min.js": 25082,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39252,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46931,
