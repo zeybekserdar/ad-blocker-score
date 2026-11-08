@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T05:19:10.189Z",
+ "updated": "2026-11-08T05:19:04.471Z",
  "lists": [
   {
    "id": "light",
@@ -129,6 +129,10 @@
    "popupads"
   ],
   "aax.amazon-adsystem.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
@@ -143,6 +147,11 @@
    "popupads"
   ],
   "ad-maven.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -181,10 +190,18 @@
    "oisd-big"
   ],
   "ads.admatic.com.tr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-big",
    "popupads"
   ],
   "ads.linkedin.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -192,6 +209,9 @@
    "social"
   ],
   "ads.pubmatic.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -274,11 +294,17 @@
    "social"
   ],
   "api-adservices.apple.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
   ],
   "api.ad.xiaomi.com": [
+   "light",
+   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -355,6 +381,11 @@
    "oisd-big"
   ],
   "auction.unityads.unity3d.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -381,6 +412,7 @@
   "bidder.criteo.com": [
    "light",
    "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -461,6 +493,11 @@
    "oisd-big"
   ],
   "cdn.reklamstore.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-big"
   ],
   "cdn.segment.com": [
@@ -481,6 +518,9 @@
    "oisd-big"
   ],
   "clickadu.com": [
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-big",
    "tif",
    "popupads"
@@ -497,6 +537,11 @@
    "ultimate"
   ],
   "config.unityads.unity3d.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -518,6 +563,7 @@
   "d.adroll.com": [
    "light",
    "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -546,6 +592,7 @@
   "dis.criteo.com": [
    "light",
    "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -601,6 +648,11 @@
    "social"
   ],
   "fastlane.rubiconproject.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -627,6 +679,10 @@
    "oisd-big"
   ],
   "iadsdk.apple.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
    "ultimate",
    "oisd-small",
    "oisd-big"
@@ -675,6 +731,9 @@
    "oisd-big"
   ],
   "log.outbrain.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -713,6 +772,9 @@
    "ultimate"
   ],
   "mc.yandex.com": [
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big"
   ],
@@ -822,6 +884,7 @@
    "popupads"
   ],
   "propellerads.com": [
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -855,7 +918,13 @@
    "proplus",
    "ultimate"
   ],
-  "reklamaction.com": [],
+  "reklamaction.com": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate"
+  ],
   "rs.fullstory.com": [
    "pro",
    "proplus",
@@ -874,6 +943,7 @@
   ],
   "s.amazon-adsystem.com": [
    "pro",
+   "proplus",
    "ultimate"
   ],
   "s.visilabs.net": [
@@ -931,9 +1001,13 @@
    "normal",
    "pro",
    "proplus",
+   "ultimate",
    "popupads"
   ],
   "sdk.netmera.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate"
   ],
@@ -947,11 +1021,15 @@
    "oisd-big"
   ],
   "secure.adnxs.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "popupads"
   ],
   "securemetrics.apple.com": [
+   "pro",
    "proplus",
    "ultimate"
   ],
@@ -984,9 +1062,7 @@
   ],
   "smetrics.fedex.com": [
    "light",
-   "normal",
-   "proplus",
-   "ultimate"
+   "normal"
   ],
   "smetrics.ford.com": [
    "light",
@@ -997,9 +1073,6 @@
   "smetrics.samsung.com": [
    "light",
    "normal",
-   "pro",
-   "proplus",
-   "ultimate",
    "oisd-small",
    "oisd-big"
   ],
@@ -1036,6 +1109,11 @@
    "social"
   ],
   "static.cdn.admatic.com.tr": [
+   "light",
+   "normal",
+   "pro",
+   "proplus",
+   "ultimate",
    "oisd-small",
    "oisd-big",
    "popupads"
@@ -1050,6 +1128,7 @@
   "static.criteo.net": [
    "light",
    "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-big",
@@ -1066,6 +1145,9 @@
    "popupads"
   ],
   "static.hotjar.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate"
   ],
@@ -1109,6 +1191,9 @@
   "tk.airfrance.fr": [],
   "tk.lacoste.com": [],
   "tlx.3lift.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -1190,6 +1275,9 @@
    "oisd-big"
   ],
   "widgets.outbrain.com": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-small",
@@ -1209,6 +1297,8 @@
    "light",
    "normal",
    "pro",
+   "proplus",
+   "ultimate",
    "oisd-big"
   ],
   "www.croxyproxy.com": [
@@ -1266,6 +1356,9 @@
    "gambling"
   ],
   "x.bidswitch.net": [
+   "light",
+   "normal",
+   "pro",
    "proplus",
    "ultimate",
    "oisd-big",
@@ -1292,7 +1385,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
+  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1378,14 +1471,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1885,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 93928,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1888,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 96318,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 35494,
   "https://connect.facebook.net/en_US/fbevents.js": 113788,
   "https://mc.yandex.ru/metrika/tag.js": 69863,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67198,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67702,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39252,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39257,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46931,
