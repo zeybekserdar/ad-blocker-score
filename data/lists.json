@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T05:20:11.419Z",
+ "updated": "2026-11-12T05:19:40.926Z",
  "lists": [
   {
    "id": "light",
@@ -772,6 +772,8 @@
    "ultimate"
   ],
   "mc.yandex.com": [
+   "light",
+   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -1385,7 +1387,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1400,7 +1402,7 @@
   "api.ad.xiaomi.com": "api.ad.xiaomi.com.mgslb.com",
   "auction.unityads.unity3d.com": "gce-auction-master.unityads.unity3d.com",
   "bat.bing.com": "bat-bing-com.ax-0001.ax-msedge.net",
-  "bidder.criteo.com": "in-ftd-65.da1.vip.prod.criteo.com",
+  "bidder.criteo.com": "in-ftd-65.us5.vip.prod.criteo.com",
   "business-api.tiktok.com": "business-api.tiktok.com.edgesuite.net",
   "c.amazon-adsystem.com": "d1ykf07e75w7ss.cloudfront.net",
   "c1.popads.net": "1355769017.rsc.cdn77.org",
@@ -1414,7 +1416,7 @@
   "connect.facebook.net": "scontent.xx.fbcdn.net",
   "ct.pinterest.com": "www.pinterest.com",
   "data.mistat.xiaomi.com": "data.mistat.xiaomi.com.mgslb.com",
-  "dis.criteo.com": "in-ftd-275.da1.vip.prod.criteo.com",
+  "dis.criteo.com": "in-ftd-275.us5.vip.prod.criteo.com",
   "dns.nextdns.io": "steering.nextdns.io",
   "events.reddit.com": "reddit.map.fastly.net",
   "fastlane.rubiconproject.com": "tagged-by.rubiconproject.net.akadns.net",
@@ -1447,7 +1449,7 @@
   "sstats.adobe.com": "adobe.com.ssl.d1.sc.omtrdc.net",
   "static.ads-twitter.com": "platform.twitter.map.fastly.net",
   "static.chartbeat.com": "d3f7zc5bbfci5.cloudfront.net",
-  "static.criteo.net": "in-ftd-172.da1.vip.prod.criteo.com",
+  "static.criteo.net": "in-ftd-172.us5.vip.prod.criteo.com",
   "static.hotjar.com": "static-cdn.hotjar.com",
   "static.media.net": "wildcard.media.net.edgekey.net",
   "tk.airfrance.fr": "tkairfrance.wizaly.com",
@@ -1472,17 +1474,17 @@
  },
  "payloads": {
   "https://analytics.tiktok.com/i18n/pixel/events.js": 1887,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 93973,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 96312,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 35494,
   "https://connect.facebook.net/en_US/fbevents.js": 114249,
-  "https://mc.yandex.ru/metrika/tag.js": 69863,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67665,
+  "https://mc.yandex.ru/metrika/tag.js": 69921,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67632,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 39298,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38694,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46611,
-  "https://widgets.outbrain.com/outbrain.js": 121149,
+  "https://widgets.outbrain.com/outbrain.js": 121855,
   "https://www.google-analytics.com/analytics.js": 52310
  }
 }
