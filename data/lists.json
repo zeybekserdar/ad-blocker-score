@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T05:19:19.366Z",
+ "updated": "2026-11-14T05:18:59.812Z",
  "lists": [
   {
    "id": "light",
@@ -769,7 +769,9 @@
    "oisd-big"
   ],
   "malware.wicar.org": [
-   "ultimate"
+   "proplus",
+   "ultimate",
+   "tif"
   ],
   "mc.yandex.com": [
    "light",
@@ -1389,7 +1391,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1476,13 +1478,13 @@
  },
  "payloads": {
   "https://analytics.tiktok.com/i18n/pixel/events.js": 1887,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 96347,
-  "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 35494,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 93990,
+  "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 39094,
   "https://connect.facebook.net/en_US/fbevents.js": 98650,
-  "https://mc.yandex.ru/metrika/tag.js": 69921,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 67535,
+  "https://mc.yandex.ru/metrika/tag.js": 69971,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66966,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38735,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38727,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 46611,
