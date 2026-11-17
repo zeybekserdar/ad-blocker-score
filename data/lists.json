@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T05:18:57.833Z",
+ "updated": "2026-11-17T05:19:13.823Z",
  "lists": [
   {
    "id": "light",
@@ -441,8 +441,6 @@
    "ultimate"
   ],
   "c1.popads.net": [
-   "light",
-   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -932,8 +930,6 @@
    "ultimate"
   ],
   "rs.fullstory.com": [
-   "light",
-   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -1052,8 +1048,6 @@
    "popupads"
   ],
   "serve.popads.net": [
-   "light",
-   "normal",
    "pro",
    "proplus",
    "ultimate",
@@ -1483,18 +1477,18 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1885,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 96357,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1889,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 93978,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 39094,
-  "https://connect.facebook.net/en_US/fbevents.js": 98650,
+  "https://connect.facebook.net/en_US/fbevents.js": 98703,
   "https://mc.yandex.ru/metrika/tag.js": 69971,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66965,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66920,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38722,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38767,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21546,
   "https://static.ads-twitter.com/uwt.js": 17324,
-  "https://static.criteo.net/js/ld/publishertag.js": 46611,
-  "https://widgets.outbrain.com/outbrain.js": 121847,
+  "https://static.criteo.net/js/ld/publishertag.js": 60847,
+  "https://widgets.outbrain.com/outbrain.js": 122014,
   "https://www.google-analytics.com/analytics.js": 52310
  }
 }
