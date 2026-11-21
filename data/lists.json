@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T05:19:40.302Z",
+ "updated": "2026-11-21T05:18:59.228Z",
  "lists": [
   {
    "id": "light",
@@ -522,7 +522,6 @@
    "proplus",
    "ultimate",
    "oisd-big",
-   "tif",
    "popupads"
   ],
   "cloudflare-dns.com": [
@@ -663,8 +662,6 @@
    "ultimate"
   ],
   "fls-na.amazon-adsystem.com": [
-   "pro",
-   "proplus",
    "ultimate"
   ],
   "freedns.afraid.org": [
@@ -1391,7 +1388,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
+  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1422,7 +1419,7 @@
   "data.mistat.xiaomi.com": "data.mistat.xiaomi.com.mgslb.com",
   "dis.criteo.com": "in-ftd-275.us5.vip.prod.criteo.com",
   "dns.nextdns.io": "steering.nextdns.io",
-  "events.reddit.com": "reddit.map.fastly.net",
+  "events.reddit.com": "dualstack.reddit.map.fastly.net",
   "fastlane.rubiconproject.com": "tagged-by.rubiconproject.net.akadns.net",
   "iadsdk.apple.com": "iadsdk.apple.com.akadns.net",
   "ib.adnxs.com": "xandrpme-g-geo.trafficmanager.net",
@@ -1477,14 +1474,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1827,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 96361,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1828,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 96382,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 39094,
   "https://connect.facebook.net/en_US/fbevents.js": 98870,
   "https://mc.yandex.ru/metrika/tag.js": 69971,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66859,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66855,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38887,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38888,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21684,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 60847,
