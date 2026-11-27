@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T05:20:30.028Z",
+ "updated": "2026-11-27T05:20:47.845Z",
  "lists": [
   {
    "id": "light",
@@ -1386,7 +1386,7 @@
  "cnames": {
   "a.teads.tv": "teads.map.fastly.net",
   "aax.amazon-adsystem.com": "aax-dtb-cf.amazon-adsystem.com",
-  "acdn.adnxs.com": "cdn.adnxs.com.akamaized.net",
+  "acdn.adnxs.com": "prod.appnexus.map.fastly.net",
   "ads-api.tiktok.com": "ads-api.tiktok.com.edgekey.net",
   "ads-api.twitter.com": "s.twitter.com",
   "ads.linkedin.com": "mix-cdn.linkedin.com",
@@ -1472,14 +1472,14 @@
   "xp.apple.com": "xp.g.aaplimg.com"
  },
  "payloads": {
-  "https://analytics.tiktok.com/i18n/pixel/events.js": 1831,
-  "https://c.amazon-adsystem.com/aax2/apstag.js": 96339,
+  "https://analytics.tiktok.com/i18n/pixel/events.js": 1826,
+  "https://c.amazon-adsystem.com/aax2/apstag.js": 96347,
   "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js": 41778,
   "https://connect.facebook.net/en_US/fbevents.js": 98870,
   "https://mc.yandex.ru/metrika/tag.js": 70181,
-  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66858,
+  "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js": 66857,
   "https://sc-static.net/scevent.min.js": 25082,
-  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38888,
+  "https://securepubads.g.doubleclick.net/tag/js/gpt.js": 38886,
   "https://snap.licdn.com/li.lms-analytics/insight.min.js": 21684,
   "https://static.ads-twitter.com/uwt.js": 17324,
   "https://static.criteo.net/js/ld/publishertag.js": 60847,
